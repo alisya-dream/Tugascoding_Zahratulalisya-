@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <title>Papua Forest Crisis</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- GOOGLE FONT -->
+    <link rel="preconnect"
+        href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- LEAFLET -->
+    <link rel="stylesheet"
+        href="https://unpkg.com/leaflet/dist/leaflet.css"/>
+
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+
+    <!-- AOS -->
+    <link rel="stylesheet"
+        href="https://unpkg.com/aos@2.3.1/dist/aos.css"/>
+
+    <!-- AFRAME -->
+    <script src="https://aframe.io/releases/1.4.0/aframe.min.js"></script>
+
+</head>
+
+<body>
+
+
+    <!-- HERO -->
+
+    <section class="hero">
+
+        <video autoplay muted loop playsinline class="hero-video">
+
+            <source src="assets/forest-video.mp4"
+                    type="video/mp4">
+
+        </video>
+
+        <div class="overlay"></div>
+
+        <div class="hero-content">
+
+            <h1>
+                Papua Forest Is Under Threat
+            </h1>
+
+            <p>
+                Indonesia is losing one of the world's
+                last tropical rainforests.
+            </p>
+
+            <a href="#protect" class="cta-button">
+                Become a Protector
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <!-- ABOUT -->
+
+    <section class="about">
+
+        <div class="section-title">
+
+            <h2>
+                Why Papua Matters
+            </h2>
+
+            <p>
+                Papua rainforest is one of the richest
+                ecosystems on Earth.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- MAP -->
+
+    <section class="map-section">
+
+        <div class="section-title">
+
+            <h2>
+                Interactive Forest Map
+            </h2>
+
+        </div>
+
+        <div id="map"></div>
+
+    </section>
+
+
+    <!-- DATA -->
+
+    <section class="data-section">
+
+        <div class="stats-container">
+
+            <div class="stat-box">
+
+                <h3 class="counter"
+                    data-target="1100000">
+                    0
+                </h3>
+
+                <p>
+                    hectares lost since 2001
+                </p>
+
+            </div>
+
+            <div class="stat-box">
+
+                <h3 class="counter"
+                    data-target="348">
+                    0
+                </h3>
+
+                <p>
+                    increase in deforestation
+                </p>
+
+            </div>
+
+            <div class="stat-box">
+
+                <h3 class="counter"
+                    data-target="60337">
+                    0
+                </h3>
+
+                <p>
+                    hectares lost recently
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- STORY -->
+
+    <section class="story-section">
+
+        <div class="story-content">
+
+            <h2>
+                Forests Are More Than Trees
+            </h2>
+
+            <p>
+                Forests are home to indigenous communities,
+                biodiversity, rivers, and wildlife.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- BEFORE AFTER -->
+
+    <section class="comparison-section">
+
+        <div class="section-title">
+
+            <h2>
+                Before vs After
+            </h2>
+
+        </div>
+
+        <div class="comparison-wrapper">
+
+            <div class="image-container">
+
+                <img src="assets/after.jpg"
+                    class="after-image">
+
+                <div class="before-image-container">
+
+                    <img src="assets/before.jpg"
+                        class="before-image">
+
+                </div>
+
+            </div>
+
+            <input type="range"
+                min="0"
+                max="100"
+                value="50"
+                class="slider">
+
+        </div>
+
+    </section>
+
+
+    <!-- AR -->
+
+    <section class="ar-section">
+
+        <div class="section-title">
+
+            <h2>
+                AR Forest Experience
+            </h2>
+
+        </div>
+
+        <a-scene embedded>
+
+            <a-box position="0 1 -3"
+                rotation="0 45 45"
+                color="#1B4332">
+            </a-box>
+
+            <a-sphere position="2 1 -5"
+                    radius="1"
+                    color="#2A9D8F">
+            </a-sphere>
+
+            <a-plane rotation="-90 0 0"
+                    width="10"
+                    height="10"
+                    color="#588157">
+            </a-plane>
+
+            <a-sky color="#B7E4C7"></a-sky>
+
+        </a-scene>
+
+    </section>
+
+
+    <!-- CTA -->
+
+    <section class="protect-section"
+            id="protect">
+
+        <div class="protect-content">
+
+            <h2>
+                The Forest Cannot Protect Itself
+            </h2>
+
+            <p>
+                Every voice matters.
+                Every action counts.
+            </p>
+
+            <button class="protect-btn">
+
+                Become a Protector
+
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- FOOTER -->
+
+    <footer>
+
+        <p>
+            © 2026 Papua Forest Crisis Campaign
+        </p>
+
+    </footer>
+
+
+    <!-- AOS -->
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script>
+        AOS.init();
+    </script>
+
+
+    <!-- JS -->
+
+    <script src="script.js"></script>
+
+</body>
+</html>
